@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:padding="10dp"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/titleEx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="4dp"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Example" />
+
+    <TextView
+        android:id="@+id/titleTrans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@id/TYPE"
+        app:layout_constraintTop_toBottomOf="@id/TYPE"
+        tools:text="Example" />
+
+    <TextView
+        android:id="@+id/subTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/titleEx"
+        app:layout_constraintStart_toStartOf="@id/titleEx"
+        tools:text="Example" />
+
+    <TextView
+        android:id="@+id/TYPE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@id/subTitle"
+        app:layout_constraintTop_toBottomOf="@id/subTitle"
+        tools:text="cdhjsvvhsc" />
+
+    <ImageView
+        android:id="@+id/btnSelect"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:padding="2dp"
+        app:layout_constraintBottom_toBottomOf="@id/titleEx"
+        app:layout_constraintTop_toTopOf="@id/titleEx"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/ic_bookmark"/>
+
+    <ImageView
+        android:id="@+id/btnVolume"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:padding="2dp"
+        app:layout_constraintBottom_toBottomOf="@id/titleEx"
+        app:layout_constraintTop_toTopOf="@id/titleEx"
+        app:layout_constraintEnd_toStartOf="@id/btnSelect"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/baseline_volume_up_24"/>
+
+    <TextView
+        android:id="@+id/countable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:layout_marginStart="6dp"
+        app:layout_constraintStart_toEndOf="@id/TYPE"
+        app:layout_constraintTop_toTopOf="@id/TYPE"
+        app:layout_constraintBottom_toBottomOf="@id/TYPE"
+        tools:text="[C]" />
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
